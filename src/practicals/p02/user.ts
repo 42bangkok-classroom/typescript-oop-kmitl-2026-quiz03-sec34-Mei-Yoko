@@ -4,12 +4,6 @@ export class User {
     private age: number= 0;
     static BIRTH_YEAR: number = 0;
 
-    constructor(firstname: string = "", lastname: string ="", age: number = 0){
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.age = age;
-    }
-
     setFirstname(firstname: string): void{
         this.firstname = firstname;
     }
