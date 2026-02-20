@@ -1,30 +1,29 @@
 export class User {
-    public firstname: string ="";
-    public lastname: string ="";
-    private age: number= 0;
+    private firstname: string = "";
+    private lastname: string = "";
+    private age: number = 0;
     static BIRTH_YEAR: number = 0;
 
-    setFirstname(firstname: string): void{
+    setFirstname(firstname: string): void {
         this.firstname = firstname;
     }
 
-    setLastname(lastname: string): void{
+    setLastname(lastname: string): void {
         this.lastname = lastname;
     }
 
-    setAge(age: number): void{
+    setAge(age: number): void {
         this.age = age;
+        User.BIRTH_YEAR = new Date().getFullYear() - age;
     }
-    
-    getAge(): number{
+
+    getAge(): number {
         return this.age;
     }
 
-    getFullname(): string{
-        return `$(this.firstname) $(this.lastname)`;
+    getFullName(): string {
+        return `${this.firstname} ${this.lastname}`;
     }
-
-
 }
 
 
