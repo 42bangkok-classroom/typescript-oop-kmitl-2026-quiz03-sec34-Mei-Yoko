@@ -2,7 +2,7 @@ export class User {
     public firstname: string ="";
     public lastname: string ="";
     private age: number= 0;
-    static BIRTH_YEAR: number = 2000;
+    static BIRTH_YEAR: number = 0;
 
     constructor(firstname: string = "", lastname: string ="", age: number = 0){
         this.firstname = firstname;
